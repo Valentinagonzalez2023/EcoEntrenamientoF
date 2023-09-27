@@ -1,0 +1,257 @@
+/* ESTILOS GENERALES */
+
+* {margin: 0;
+  padding: 0;}
+
+h1 {color: rgb(135, 143, 151);
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 36px; /* Tamaño del título */
+  margin-bottom: 20px; /* Espaciado inferior del título */}
+
+h2 {color: orange;
+  text-align: center;
+  font-size: 26px;
+  font-family: Arial, Helvetica, sans-serif;}
+
+/* ESTILOS PARA FOOTER */
+
+footer {background-color: gray; 
+  color: white; /* Texto en blanco */
+  padding: 10px 0px; /* Espaciado interior superior e inferior */}
+
+.container-footer {max-width: 1200px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centrar horizontalmente */}
+
+/* Estilos para los íconos */
+i {margin-right: 5px; /* Espaciado a la derecha de los íconos */
+  font-size: 20px; /* Tamaño de fuente para los íconos */}
+
+footer p {display: flex;
+  align-items: center; /* Alinea verticalmente el contenido de los párrafos con los íconos */
+  margin-right: 20px; /* Espaciado a la derecha de los párrafos */
+  font-size: 20px; /* Tamaño de fuente para el texto */
+  margin-bottom: 5px;}
+
+/* Estilos para los enlaces */
+a {color: white;}
+a:hover {color: orange;}
+
+.list-unstyled i, p {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+/* Truco para que las imágenes se adapten dentro de su contenedor */
+img {max-width: 100%;
+  height: auto;}
+
+/* ESTILOS PARA HEADER */
+
+.container-nav {
+  background-color: gray;}
+
+.navbar {align-items: center;}
+
+.navbar-brand img {max-width: 150px;
+  margin-left: 20px;}
+
+/* Estilos para los enlaces de la barra de navegación */
+.navbar-nav .nav-link {color: white;
+  border: 2px solid orange;
+  border-radius: 10px;
+  font-size: 20px;}
+
+.navbar-nav a:hover {color: black;}
+
+.navbar-nav .nav-item {margin-right: 10px;}
+
+/* ESTILOS PARA MAIN-INDEX */
+
+.movimiento {background-color: rgb(219, 216, 216);
+  padding: 20px 0; }
+.movimiento p {font-size: 20px;}
+
+.elMundo {background-color: white;
+padding:  20px 0;}
+.elMundo p {font-size: 20px;}
+
+.elMundo img {max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;}
+
+.orange {background-color: rgb(243, 161, 9);
+  color: white;
+  padding: 10px;}
+.orange p {margin: 5px 0;}
+
+/* ESTILOS PARA MAIN-NOSOTROS */
+
+.hermanos { background-color: white;
+  padding: 30px 0; /* Espaciado interior superior e inferior */}
+
+.hermanos p {font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.hermanos strong {color: orange;
+  font-size: 30px;}
+
+.hermanos .zoom img { border: 3px solid orange;
+  border-radius: 10px;
+  width: 450px;
+  height: 650px ;
+  margin-top: 20px;
+  transition: transform 0.2s;
+  cursor: pointer;}
+.hermanos .zoom img:hover { transform: scale(1.1);}
+
+/* Estilos para el carrusel de imágenes */
+#carouselGim {margin-top: 20px;
+border: 3px solid orange;
+border-radius: 10px;}
+
+/* Estilos para los iconos de los controles del carrusel */
+.carousel-control-prev-icon, .carousel-control-next-icon {background-color: orange; /* Color de fondo de los iconos */}
+
+.profe-nuevo { background-color: rgb(219, 216, 216);
+  margin-top: 30px;
+  margin-bottom: 30px;}
+.profe-nuevo p {text-align: center;
+font-size: 20px;
+margin-top: 10px;}
+
+.profe-nuevo img {width: 500px;
+  height: 550px;
+  display: block; /* Asegura que los márgenes automáticos funcionen */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border: 3px solid orange;
+  border-radius: 10px;
+  transition: transform 0.2s;
+  cursor: pointer;}
+.profe-nuevo img:hover {transform: scale(1.1);}
+
+.profesores {background-image: url(../img/background.jpeg);
+  background-repeat: repeat;}
+
+.profesores p {background-color: rgb(252, 213, 141);
+  text-align: justify;
+  font-size: 20px;
+margin-top: 10px;}
+
+.profesores img {width: 400px;
+  height: 500px;
+  display: block; /* Asegura que los márgenes automáticos funcionen */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+  margin-bottom: 40px;
+  margin-top: 40px;
+  transition: transform 0.2s;
+  cursor: pointer;
+  border: 3px solid orange;
+  border-radius: 10px;}
+.profesores img:hover { transform: scale(1.1);}
+
+
+/* ESTILOS PARA MAIN-INFORMACION */
+
+.container-servicios img {max-width: 80%;
+  height: auto; /* Mantiene la proporción de aspecto original */
+  display: block; /* Elimina el espacio adicional debajo de las imágenes */
+  align-items: center;}
+
+.col .destacada {transition: transform 0.2s;
+  cursor: pointer;}
+
+/* Efecto de zoom al pasar el cursor sobre las imágenes */
+.col .destacada:hover {transform: scale(1.3);}
+
+#horarios {display: flex;
+  gap: 10px; /* Espacio entre la imagen y el texto, ajusta según lo desees */
+  align-items: center; /* Centra verticalmente los elementos */}
+
+#horarios img {max-width: 50%;
+  height: auto;
+  display: block;}
+
+#horarios p {font-size: 20px;
+  font-family: sans-serif;}
+
+.container-main-informacion p {font-size: 20px;
+  font-family: sans-serif;
+  text-align: center;}
+
+#datos {margin-top: 30px;
+  background-color: rgb(180, 177, 177); /* Color de fondo */
+  padding: 10px; /* Espacio interior */
+  border-radius: 5px; /* Bordes redondeados */}
+
+#datos form {max-width: 400px; /* Ancho máximo del formulario */
+  margin: 0 auto; /* Centra el formulario horizontalmente */}
+
+label {display: block; /* Coloca cada etiqueta en una línea nueva */
+  margin-top: 10px; /* Espacio superior entre las etiquetas */
+  font-weight: bold; /* Hace que las etiquetas sean negritas */
+  font-family: sans-serif;}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea {width: 100%; /* Los campos de entrada ocupan todo el ancho del formulario */
+  padding: 10px; /* Espacio interior en los campos de entrada */
+  margin-bottom: 10px; /* Espacio inferior entre los campos de entrada */
+  border: 1px solid #ccc; /* Borde de los campos de entrada */
+  border-radius: 5px; /* Bordes redondeados */}
+
+input[type="submit"] {background-color: orange; /* Color de fondo del botón de enviar */
+  color: #fff; /* Color de texto del botón de enviar */
+  padding: 10px 20px; /* Espacio interior en el botón de enviar */
+  border: none; /* Elimina el borde del botón de enviar */
+  border-radius: 5px; /* Bordes redondeados en el botón de enviar */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón de enviar */}
+
+input[type="submit"]:hover {background-color: gray; /* Cambia el color de fondo al pasar sobre el botón */}
+
+
+/* ESTILOS PARA MAIN-ECOMUNIDAD */
+
+/* Estilo para las imágenes */
+.container-comunidad img {transition: transform 0.2s;
+  cursor: pointer;
+  margin-top: 20px;}
+
+/* Efecto de zoom al pasar el cursor sobre las imágenes */
+.container-comunidad img:hover {transform: scale(1.1);}
+
+/* Estilo para la sección del video */
+.video-comunidad {gap: 50px;
+  padding: 50px;}
+
+/* ESTILOS PARA MAIN-TIENDA */
+
+.suplementos { background-color: rgb(219, 216, 216);
+  padding: 20px 0;}
+
+.suplementos video {width: 500px;
+  height: 400px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border: 2px solid orange; /* Borde sólido de 2px de ancho y color azul */
+  border-radius: 10px; /* Borde redondeado */
+  padding: 10px; /* Espaciado interno para separar el contenido del borde */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra alrededor del video */
+}
+
+.snacks {
+  margin-top: 30px;
+  margin-bottom: 30px;}
+.snacks h2 { margin-bottom: 20px;}
+
+/* ESTILOS PARA MAIN-UBICACIÓN */
+.ubicacion { background-color: rgb(219, 216, 216);
+  padding: 20px 0; /* Espaciado interno superior e inferior */}
+
+.ubicacion p {
+  font-size: 20px;}
