@@ -234,7 +234,8 @@ background-color: rgb(219, 216, 216);}
 .suplementos { background-color: rgb(219, 216, 216);
   padding: 20px 0;}
 
-.suplementos video {width: 500px;
+.suplementos video {max-width:100%;
+  width: 500px;
   height: 400px;
   margin-top: 20px;
   margin-bottom: 30px;
