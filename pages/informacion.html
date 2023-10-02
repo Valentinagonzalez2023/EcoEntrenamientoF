@@ -49,8 +49,8 @@
     </header>
     <!--- Fin Menú de Navegación Header con Bootstrap-->
     <main>
-      <section>
-        <div class="container-servicios">
+      <section class="servicios">
+        <div class="container">
           <h1>NUESTROS SERVICIOS</h1>
           <div class="row align-items-center">
             <div class="col">
@@ -65,7 +65,7 @@
               <img src="../img/ejerciciofisicoadaptado.jpeg" alt="¿que es el ejercicio fisico adaptado?" class="destacada">
             </div>
             <div class="col">
-              <img src="../img/EFA.jpeg" alt="ejercicio fisico adaptado">
+              <img src="../img/EFA.jpeg" alt="ejercicio fisico adaptado" class="destacada-especial">
             </div>
           </div>
           <div class="row align-items-center">
@@ -78,14 +78,19 @@
           </div>
         </div>
       </section>
-
-      <h1>NUESTROS HORARIOS</h1>
-      <section id="horarios">
-        <img src="../img/horarios.jpeg" alt="horarios gimnasio">
-        <p>¡Comunicate con nosotros y comenzá!</p>
+      <section class="horarios">
+        <div class="container">
+          <h1>NUESTROS HORARIOS</h1>
+          <div class="row align-items-center">
+            <div class="col">
+              <p>¡Comunicate con nosotros y comenzá!</p>
+              <img src="../img/horarios.jpeg" alt="horarios gimnasio"> 
+            </div>
+          </div>
+        </div>
       </section>
-      <p>También podes dejarnos tus datos y nosotros te contactamos</p>
-      <section id="datos">
+      <section class="datos">
+        <p>También podes dejarnos tus datos y nosotros te contactamos</p>
         <form action="" method="">
           <label>Nombre</label>
           <input type="text" name="nombre" placeholder="ej: Pablo">
