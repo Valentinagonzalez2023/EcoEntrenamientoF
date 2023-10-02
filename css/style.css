@@ -29,9 +29,7 @@ i {margin-right: 5px; /* Espaciado a la derecha de los íconos */
 
 footer p {display: flex;
   align-items: center; /* Alinea verticalmente el contenido de los párrafos con los íconos */
-  margin-right: 20px; /* Espaciado a la derecha de los párrafos */
-  font-size: 20px; /* Tamaño de fuente para el texto */
-  margin-bottom: 5px;}
+  font-size: 20px; /* Tamaño de fuente para el texto */}
 
 /* Estilos para los enlaces */
 a {color: white;}
@@ -101,7 +99,7 @@ padding:  20px 0;}
 .hermanos .zoom img { border: 3px solid orange;
   border-radius: 10px;
   width: 450px;
-  height: 650px ;
+  height: 700px ;
   margin-top: 20px;
   transition: transform 0.2s;
   cursor: pointer;}
