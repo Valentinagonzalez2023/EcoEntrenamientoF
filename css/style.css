@@ -157,38 +157,40 @@ margin-top: 10px;}
 
 /* ESTILOS PARA MAIN-INFORMACION */
 
-.container-servicios img {max-width: 80%;
-  height: auto; /* Mantiene la proporción de aspecto original */
-  display: block; /* Elimina el espacio adicional debajo de las imágenes */
-  align-items: center;}
+.servicios {padding: 20px 0;
+  background-color: rgb(219, 216, 216);
+}
 
 .col .destacada {transition: transform 0.2s;
-  cursor: pointer;}
+  cursor: pointer;
+  margin-left: 10px;}
+.col .destacada:hover {transform: scale(1.1);}
 
-/* Efecto de zoom al pasar el cursor sobre las imágenes */
-.col .destacada:hover {transform: scale(1.3);}
+.col .destacada-especial {margin-left: 20px;}
 
-#horarios {display: flex;
-  gap: 10px; /* Espacio entre la imagen y el texto, ajusta según lo desees */
-  align-items: center; /* Centra verticalmente los elementos */}
 
-#horarios img {max-width: 50%;
-  height: auto;
-  display: block;}
+.horarios {padding: 20px 0;}
+.horarios img {
+  width: 600px;
+  height: 750px;
+  display: block; /* Asegura que los márgenes automáticos funcionen */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+  margin-top: 20px;
+  margin-bottom: 20px;}
 
-#horarios p {font-size: 20px;
-  font-family: sans-serif;}
-
-.container-main-informacion p {font-size: 20px;
+.horarios p {font-size: 20px;
   font-family: sans-serif;
-  text-align: center;}
+text-align: center;}
 
-#datos {margin-top: 30px;
-  background-color: rgb(180, 177, 177); /* Color de fondo */
-  padding: 10px; /* Espacio interior */
+.datos p {font-size: 20px;
+  font-family: sans-serif;
+text-align: center;}
+
+.datos {background-color: rgb(219, 216, 216);
+  padding: 20px; /* Espacio interior */
   border-radius: 5px; /* Bordes redondeados */}
 
-#datos form {max-width: 400px; /* Ancho máximo del formulario */
+.datos form {max-width: 400px; /* Ancho máximo del formulario */
   margin: 0 auto; /* Centra el formulario horizontalmente */}
 
 label {display: block; /* Coloca cada etiqueta en una línea nueva */
@@ -206,7 +208,7 @@ textarea {width: 100%; /* Los campos de entrada ocupan todo el ancho del formula
   border-radius: 5px; /* Bordes redondeados */}
 
 input[type="submit"] {background-color: orange; /* Color de fondo del botón de enviar */
-  color: #fff; /* Color de texto del botón de enviar */
+  color: white; /* Color de texto del botón de enviar */
   padding: 10px 20px; /* Espacio interior en el botón de enviar */
   border: none; /* Elimina el borde del botón de enviar */
   border-radius: 5px; /* Bordes redondeados en el botón de enviar */
