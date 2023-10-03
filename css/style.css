@@ -107,7 +107,8 @@ overflow-x: hidden;}
   display: inline-block;
   white-space: nowrap;}
   
-@keyframes moveText {
+/* Estilos para pantallas más grandes */
+  @keyframes moveText {
   0% {
     transform: translateX(-100%);
     opacity: 0;
@@ -126,6 +127,40 @@ overflow-x: hidden;}
   }
 }
 
+/* Estilos para pantallas más pequeñas (móviles) */
+@media (max-width: 768px) {
+  .orange p {
+    font-size: 18px; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+    animation: moveTextMobile 4s linear infinite; /* Cambia la animación para móviles */
+  }
+  .movimiento h1 {
+    font-size: 16px;
+    animation: moveTextMobile 4s linear infinite;
+  }
+  .elMundo h1 {
+    font-size: 16px;
+    animation: moveTextMobile 4s linear infinite;
+  }
+
+  @keyframes moveTextMobile {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    25% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    75% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+  }
+}
 /* ESTILOS PARA MAIN-NOSOTROS */
 
 .hermanos { background-color: white;
