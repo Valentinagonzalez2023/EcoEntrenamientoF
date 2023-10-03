@@ -14,6 +14,14 @@ h2 {color: orange;
   font-size: 26px;
   font-family: Arial, Helvetica, sans-serif;}
 
+/* Estilos para los carrusel de imágenes */
+#carousel {margin-top: 20px;
+  border: 3px solid orange;
+  border-radius: 10px;}
+  
+/* Estilos para los iconos de los controles del carrusel */
+.carousel-control-prev-icon, .carousel-control-next-icon {background-color: orange; /* Color de fondo de los iconos */}
+
 /* ESTILOS PARA FOOTER */
 
 footer {background-color: gray; 
@@ -67,29 +75,63 @@ img {max-width: 100%;
 /* ESTILOS PARA MAIN-INDEX */
 
 .movimiento {background-color: rgb(219, 216, 216);
-  padding: 20px 0; }
-.movimiento p {font-size: 20px;}
+  padding: 20px 0;
+  overflow-x: hidden;}
+.movimiento h1 {color: black;
+  font-size: 36px;
+  animation: moveText 6s linear infinite;
+  display: inline-block;
+  white-space: nowrap;}
 
 .elMundo {background-color: white;
-padding:  20px 0;}
-.elMundo p {font-size: 20px;}
-
+padding:  20px 0;
+overflow-x: hidden;}
+.elMundo h1 {color: black;
+  font-size: 36px;
+  animation: moveText 6s linear infinite;
+  display: inline-block;
+  white-space: nowrap;}
 .elMundo img {max-width: 100%;
   height: auto;
   margin-top: 10px;
   margin-bottom: 20px;}
+.elMundo p {font-size: 22px;}
 
 .orange {background-color: rgb(243, 161, 9);
   color: white;
-  padding: 10px;}
-.orange p {margin: 5px 0;}
+  padding: 10px;
+  overflow-x: hidden;}
+.orange p {margin: 5px 0;
+  font-size: 26px;
+  animation: moveText 6s linear infinite;
+  display: inline-block;
+  white-space: nowrap;}
+  
+@keyframes moveText {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  25% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  75% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
 
 /* ESTILOS PARA MAIN-NOSOTROS */
 
 .hermanos { background-color: white;
   padding: 30px 0; /* Espaciado interior superior e inferior */}
 
-.hermanos p {font-size: 20px;
+.hermanos p {font-size: 22px;
   margin-bottom: 20px;
 }
 
@@ -105,19 +147,11 @@ padding:  20px 0;}
   cursor: pointer;}
 .hermanos .zoom img:hover { transform: scale(1.1);}
 
-/* Estilos para el carrusel de imágenes */
-#carousel {margin-top: 20px;
-border: 3px solid orange;
-border-radius: 10px;}
-
-/* Estilos para los iconos de los controles del carrusel */
-.carousel-control-prev-icon, .carousel-control-next-icon {background-color: orange; /* Color de fondo de los iconos */}
-
 .profe-nuevo { background-color: rgb(219, 216, 216);
   margin-top: 30px;
   margin-bottom: 30px;}
 .profe-nuevo p {text-align: center;
-  font-size: 20px;
+  font-size: 22px;
   margin-top: 10px;}
 
 .profe-nuevo img {width: 500px;
@@ -135,8 +169,8 @@ border-radius: 10px;}
 .profesores {background-image: url(../img/background.jpeg);
   background-repeat: repeat;}
 .profesores p {background-color: rgb(252, 213, 141);
-  text-align: justify;
-  font-size: 20px;
+  text-align: center;
+  font-size: 22px;
   margin-top: 10px;}
 
 .profesores img {width: 400px;
@@ -173,11 +207,11 @@ border-radius: 10px;}
   margin: 0 auto; /* Centra la imagen horizontalmente */
   margin-top: 20px;
   margin-bottom: 20px;}
-.horarios p {font-size: 20px;
+.horarios p {font-size: 22px;
   font-family: sans-serif;
   text-align: center;}
 
-.datos p {font-size: 20px;
+.datos p {font-size: 22px;
   font-family: sans-serif;
   text-align: center;}
 .datos {background-color: rgb(219, 216, 216);
@@ -253,4 +287,4 @@ background-color: rgb(219, 216, 216);}
   padding: 20px 0; /* Espaciado interno superior e inferior */}
 
 .ubicacion p {
-  font-size: 20px;}
+  font-size: 22px;}
