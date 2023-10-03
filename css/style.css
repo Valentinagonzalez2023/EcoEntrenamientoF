@@ -285,6 +285,7 @@ background-color: rgb(219, 216, 216);}
 /* ESTILOS PARA MAIN-UBICACIÓN */
 .ubicacion { background-color: white;
   padding: 20px 0; /* Espaciado interno superior e inferior */}
-
-.ubicacion p {
-  font-size: 22px;}
+.ubicacion p {font-size: 22px;}
+.ubicacion iframe {max-width:100%;
+  width: 500px;
+  height: 400px;}
