@@ -175,8 +175,8 @@ overflow-x: hidden;}
 
 .hermanos .zoom img { border: 3px solid orange;
   border-radius: 10px;
-  width: 450px;
-  height: 700px ;
+  width: 400px;
+  height: 600px ;
   margin-top: 20px;
   transition: transform 0.2s;
   cursor: pointer;}
