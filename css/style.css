@@ -1,327 +1,452 @@
+@charset "UTF-8";
 /* ESTILOS GENERALES */
+/* line 3, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+* {
+  margin: 0;
+  padding: 0; }
 
-* {margin: 0;
-  padding: 0;}
-
-h1 {color: gray;
+/* line 7, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+h1 {
+  color: gray;
   text-align: center;
   font-family: sans-serif;
-  font-size: 36px; /* Tamaño del título */
-  margin-bottom: 20px; /* Espaciado inferior del título */}
+  font-size: 36px;
+  /* Tamaño del título */
+  margin-bottom: 20px;
+  /* Espaciado inferior del título */ }
 
-h2 {color: orange;
+/* line 14, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+h2 {
+  color: orange;
   text-align: center;
   font-size: 26px;
-  font-family: Arial, Helvetica, sans-serif;}
-
-/* Estilos para los carrusel de imágenes */
-#carousel {margin-top: 20px;
-  border: 3px solid orange;
-  border-radius: 10px;}
-  
-/* Estilos para los iconos de los controles del carrusel */
-.carousel-control-prev-icon, .carousel-control-next-icon {background-color: orange; /* Color de fondo de los iconos */}
-
-/* ESTILOS PARA FOOTER */
-
-footer {background-color: gray; 
-  color: white; /* Texto en blanco */
-  padding: 10px 0px; /* Espaciado interior superior e inferior */}
-
-.container-footer {max-width: 1200px; /* Ancho máximo del contenedor */
-  margin: 0 auto; /* Centrar horizontalmente */}
-
-/* Estilos para los íconos */
-i {margin-right: 5px; /* Espaciado a la derecha de los íconos */
-  font-size: 20px; /* Tamaño de fuente para los íconos */}
-
-footer p {display: flex;
-  align-items: center; /* Alinea verticalmente el contenido de los párrafos con los íconos */
-  font-size: 20px; /* Tamaño de fuente para el texto */}
-
-/* Estilos para los enlaces */
-a {color: white;
-text-decoration: none;}
-a:hover {color: orange;}
-
-.list-unstyled i, p {
-  margin-bottom: 15px;
-  font-size: 20px;
-}
+  font-family: Arial, Helvetica, sans-serif; }
 
 /* Truco para que las imágenes se adapten dentro de su contenedor */
-img {max-width: 100%;
-  height: auto;}
+/* line 21, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+img {
+  max-width: 100%;
+  height: auto; }
+
+/* Estilos para los carrusel de imágenes */
+/* line 26, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+#carousel {
+  margin-top: 20px;
+  border: 3px solid orange;
+  border-radius: 10px; }
+  /* line 30, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+  #carousel .carousel-control-prev-icon, #carousel .carousel-control-next-icon {
+    background-color: orange; }
+
+/* ESTILOS PARA FOOTER */
+/* line 34, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+.container-footer {
+  max-width: 1200px;
+  /* Ancho máximo del contenedor */
+  margin: 0 auto;
+  /* Centrar horizontalmente */ }
+
+/* line 38, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+footer {
+  background-color: gray;
+  color: white;
+  padding: 10px 0px;
+  /* Espaciado interior superior e inferior */
+  /* Estilos para los íconos */
+  /* Estilos para los enlaces */ }
+  /* line 42, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+  footer p {
+    display: flex;
+    align-items: center;
+    /* Alinea verticalmente el contenido de los párrafos con los íconos */
+    font-size: 20px; }
+  /* line 48, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+  footer i {
+    margin-right: 5px;
+    /* Espaciado a la derecha de los íconos */
+    font-size: 20px;
+    /* Tamaño de fuente para los íconos */ }
+  /* line 53, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+  footer a {
+    color: white;
+    text-decoration: none; }
+    /* line 56, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+    footer a:hover {
+      color: orange; }
+  /* line 59, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+  footer .list-unstyled i {
+    margin-bottom: 15px; }
 
 /* ESTILOS PARA HEADER */
-
+/* line 66, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
 .container-nav {
-  background-color: gray;}
+  background-color: gray; }
 
-.navbar {align-items: center;}
-
-.navbar-brand img {max-width: 150px;
-  margin-left: 20px;}
+/* line 70, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+.navbar {
+  align-items: center; }
+  /* line 72, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+  .navbar .navbar-brand img {
+    max-width: 150px;
+    margin-left: 20px; }
 
 /* Estilos para los enlaces de la barra de navegación */
-.navbar-nav .nav-link {color: white;
-  border: 2px solid orange;
-  border-radius: 10px;
-  font-size: 20px;}
-
-.navbar-nav a:hover {color: black;}
-
-.navbar-nav .nav-item {margin-right: 10px;}
+/* line 78, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+.nav-item {
+  margin-right: 10px; }
+  /* line 80, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+  .nav-item .nav-link {
+    color: white;
+    border: 2px solid orange;
+    border-radius: 10px;
+    font-size: 20px; }
+    /* line 85, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+    .nav-item .nav-link:hover {
+      color: black; }
 
 /* ESTILOS PARA MAIN-INDEX */
-
-.movimiento {background-color: rgb(219, 216, 216);
+/* line 91, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+.movimiento {
+  background-color: #dbd8d8;
   padding: 20px 0;
-  overflow-x: hidden;}
-.movimiento h1 {color: black;
-  font-size: 36px;
-  animation: moveText 6s linear infinite;
-  display: inline-block;
-  white-space: nowrap;}
+  overflow-x: hidden; }
+  /* line 95, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+  .movimiento h1 {
+    color: black;
+    font-size: 36px;
+    animation: moveText 6s linear infinite;
+    display: inline-block;
+    white-space: nowrap; }
 
-.elMundo {background-color: white;
-padding:  20px 0;
-overflow-x: hidden;}
-.elMundo h1 {color: black;
-  font-size: 36px;
-  animation: moveText 6s linear infinite;
-  display: inline-block;
-  white-space: nowrap;}
-.elMundo img {max-width: 100%;
-  height: auto;
-  margin-top: 10px;
-  margin-bottom: 20px;}
-.elMundo p {font-size: 22px;}
+/* line 103, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+.elMundo {
+  background-color: white;
+  padding: 20px 0;
+  overflow-x: hidden; }
+  /* line 107, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+  .elMundo h1 {
+    color: black;
+    font-size: 36px;
+    animation: moveText 6s linear infinite;
+    display: inline-block;
+    white-space: nowrap; }
+  /* line 114, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+  .elMundo img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 20px; }
+  /* line 120, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+  .elMundo p {
+    font-size: 22px; }
 
-.orange {background-color: rgb(243, 161, 9);
+/* line 124, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+.orange {
+  background-color: #f3a109;
   color: white;
   padding: 10px;
-  overflow-x: hidden;}
-.orange p {margin: 5px 0;
-  font-size: 26px;
-  animation: moveText 6s linear infinite;
-  display: inline-block;
-  white-space: nowrap;}
-  
-/* Estilos para pantallas más grandes */
-  @keyframes moveText {
+  overflow-x: hidden;
+  /* Estilos para pantallas más grandes */
+  /* Estilos para pantallas más pequeñas (móviles) */ }
+  /* line 129, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+  .orange p {
+    margin: 5px 0;
+    font-size: 26px;
+    animation: moveText 6s linear infinite;
+    display: inline-block;
+    white-space: nowrap; }
+
+@keyframes moveText {
   0% {
     transform: translateX(-100%);
-    opacity: 0;
-  }
+    opacity: 0; }
   25% {
     transform: translateX(0);
-    opacity: 1;
-  }
+    opacity: 1; }
   75% {
     transform: translateX(0);
-    opacity: 1;
-  }
+    opacity: 1; }
   100% {
     transform: translateX(100%);
-    opacity: 0;
-  }
-}
+    opacity: 0; } }
+  @media (max-width: 768px) {
+    /* line 158, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+    .orange .orange p {
+      font-size: 18px;
+      /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+      animation: moveTextMobile 4s linear infinite;
+      /* Cambia la animación para móviles */ }
+    /* line 162, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+    .orange .movimiento h1 {
+      font-size: 16px;
+      animation: moveTextMobile 4s linear infinite; }
+    /* line 166, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+    .orange .elMundo h1 {
+      font-size: 16px;
+      animation: moveTextMobile 4s linear infinite; }
+    @keyframes moveTextMobile {
+      0% {
+        transform: translateX(-100%);
+        opacity: 0; }
+      25% {
+        transform: translateX(0);
+        opacity: 1; }
+      75% {
+        transform: translateX(0);
+        opacity: 1; }
+      100% {
+        transform: translateX(100%);
+        opacity: 0; } } }
 
-/* Estilos para pantallas más pequeñas (móviles) */
-@media (max-width: 768px) {
-  .orange p {
-    font-size: 18px; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
-    animation: moveTextMobile 4s linear infinite; /* Cambia la animación para móviles */
-  }
-  .movimiento h1 {
-    font-size: 16px;
-    animation: moveTextMobile 4s linear infinite;
-  }
-  .elMundo h1 {
-    font-size: 16px;
-    animation: moveTextMobile 4s linear infinite;
-  }
-
-  @keyframes moveTextMobile {
-    0% {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    25% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-    75% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-    100% {
-      transform: translateX(100%);
-      opacity: 0;
-    }
-  }
-}
 /* ESTILOS PARA MAIN-NOSOTROS */
+/* line 195, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+.hermanos {
+  background-color: white;
+  padding: 30px 0;
+  /* Espaciado interior superior e inferior */ }
+  /* line 198, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+  .hermanos p {
+    font-size: 22px;
+    margin-bottom: 20px; }
+  /* line 202, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+  .hermanos .texto-orange {
+    color: orange;
+    font-size: 30px; }
+  /* line 206, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+  .hermanos .zoom img {
+    border: 3px solid orange;
+    border-radius: 10px;
+    width: 400px;
+    height: 600px;
+    margin-top: 20px;
+    transition: transform 0.2s;
+    cursor: pointer; }
+    /* line 214, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+    .hermanos .zoom img:hover {
+      transform: scale(1.1); }
 
-.hermanos { background-color: white;
-  padding: 30px 0; /* Espaciado interior superior e inferior */}
-
-.hermanos p {font-size: 22px;
-  margin-bottom: 20px;
-}
-
-.hermanos .texto-orange {color: orange;
-  font-size: 30px;}
-
-.hermanos .zoom img { border: 3px solid orange;
-  border-radius: 10px;
-  width: 400px;
-  height: 600px ;
-  margin-top: 20px;
-  transition: transform 0.2s;
-  cursor: pointer;}
-.hermanos .zoom img:hover { transform: scale(1.1);}
-
-.profe-nuevo { background-color: rgb(219, 216, 216);
+/* line 218, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+.profe-nuevo {
+  background-color: #dbd8d8;
   margin-top: 30px;
-  margin-bottom: 30px;}
-.profe-nuevo p {text-align: center;
-  font-size: 22px;
-  margin-top: 10px;}
+  margin-bottom: 30px; }
+  /* line 222, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+  .profe-nuevo p {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 10px; }
+  /* line 227, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+  .profe-nuevo img {
+    width: 500px;
+    height: 550px;
+    display: block;
+    /* Asegura que los márgenes automáticos funcionen */
+    margin: 0 auto;
+    /* Centra la imagen horizontalmente */
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 3px solid orange;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    cursor: pointer; }
+    /* line 238, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+    .profe-nuevo img:hover {
+      transform: scale(1.1); }
 
-.profe-nuevo img {width: 500px;
-  height: 550px;
-  display: block; /* Asegura que los márgenes automáticos funcionen */
-  margin: 0 auto; /* Centra la imagen horizontalmente */
-  margin-top: 40px;
-  margin-bottom: 40px;
-  border: 3px solid orange;
-  border-radius: 10px;
-  transition: transform 0.2s;
-  cursor: pointer;}
-.profe-nuevo img:hover {transform: scale(1.1);}
-
-.profesores {background-image: url(../img/background.jpeg);
-  background-repeat: repeat;}
-.profesores p {background-color: rgb(252, 213, 141);
-  text-align: center;
-  font-size: 22px;
-  margin-top: 10px;}
-
-.profesores img {width: 400px;
-  height: 500px;
-  display: block; /* Asegura que los márgenes automáticos funcionen */
-  margin: 0 auto; /* Centra la imagen horizontalmente */
-  margin-bottom: 40px;
-  margin-top: 40px;
-  transition: transform 0.2s;
-  cursor: pointer;
-  border: 3px solid orange;
-  border-radius: 10px;}
-.profesores img:hover { transform: scale(1.1);}
-
+/* line 242, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+.profesores {
+  background-image: url(../img/background.jpeg);
+  background-repeat: repeat; }
+  /* line 245, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+  .profesores p {
+    background-color: #fcd58d;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 10px; }
+  /* line 251, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+  .profesores img {
+    width: 400px;
+    height: 500px;
+    display: block;
+    /* Asegura que los márgenes automáticos funcionen */
+    margin: 0 auto;
+    /* Centra la imagen horizontalmente */
+    margin-bottom: 40px;
+    margin-top: 40px;
+    transition: transform 0.2s;
+    cursor: pointer;
+    border: 3px solid orange;
+    border-radius: 10px; }
+    /* line 262, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+    .profesores img:hover {
+      transform: scale(1.1); }
 
 /* ESTILOS PARA MAIN-INFORMACION */
+/* line 268, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+.servicios {
+  padding: 20px 0;
+  background-color: #dbd8d8; }
 
-.servicios {padding: 20px 0;
-  background-color: rgb(219, 216, 216);
-}
-
-.col .destacada {transition: transform 0.2s;
+/* line 272, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+.destacada {
+  transition: transform 0.2s;
   cursor: pointer;
-  margin-left: 10px;}
-.col .destacada:hover {transform: scale(1.1);}
+  margin-left: 10px; }
+  /* line 276, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+  .destacada:hover {
+    transform: scale(1.1); }
 
-.col .destacada-especial {margin-left: 20px;}
+/* line 279, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+.destacada-especial {
+  margin-left: 20px; }
 
-.horarios {padding: 20px 0;}
-.horarios img {
-  width: 450px;
-  height: 750px;
-  display: block; /* Asegura que los márgenes automáticos funcionen */
-  margin: 0 auto; /* Centra la imagen horizontalmente */
-  margin-top: 20px;
-  margin-bottom: 20px;}
-.horarios p {font-size: 22px;
-  font-family: sans-serif;
-  text-align: center;}
+/* line 281, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+.horarios {
+  padding: 20px 0; }
+  /* line 283, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+  .horarios img {
+    width: 450px;
+    height: 750px;
+    display: block;
+    /* Asegura que los márgenes automáticos funcionen */
+    margin: 0 auto;
+    /* Centra la imagen horizontalmente */
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  /* line 292, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+  .horarios p {
+    font-size: 22px;
+    font-family: sans-serif;
+    text-align: center; }
 
-.datos p {font-size: 22px;
-  font-family: sans-serif;
-  text-align: center;}
-.datos {background-color: rgb(219, 216, 216);
-  padding: 20px; /* Espacio interior */
-  border-radius: 5px; /* Bordes redondeados */}
-
-.datos form {max-width: 400px; /* Ancho máximo del formulario */
-  margin: 0 auto; /* Centra el formulario horizontalmente */}
-
-label {display: block; /* Coloca cada etiqueta en una línea nueva */
-  margin-top: 10px; /* Espacio superior entre las etiquetas */
-  font-weight: bold; /* Hace que las etiquetas sean negritas */
-  font-family: sans-serif;}
-
-input[type="text"],
-input[type="number"],
-input[type="email"],
-textarea {width: 100%; /* Los campos de entrada ocupan todo el ancho del formulario */
-  padding: 10px; /* Espacio interior en los campos de entrada */
-  margin-bottom: 10px; /* Espacio inferior entre los campos de entrada */
-  border: 1px solid #ccc; /* Borde de los campos de entrada */
-  border-radius: 5px; /* Bordes redondeados */}
-
-input[type="submit"] {background-color: orange; /* Color de fondo del botón de enviar */
-  color: white; /* Color de texto del botón de enviar */
-  padding: 10px 20px; /* Espacio interior en el botón de enviar */
-  border: none; /* Elimina el borde del botón de enviar */
-  border-radius: 5px; /* Bordes redondeados en el botón de enviar */
-  cursor: pointer; /* Cambia el cursor al pasar sobre el botón de enviar */}
-
-input[type="submit"]:hover {background-color: gray; /* Cambia el color de fondo al pasar sobre el botón */}
-
+/* line 298, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+.datos {
+  background-color: #dbd8d8;
+  padding: 20px;
+  /* Espacio interior */
+  border-radius: 5px; }
+  /* line 302, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+  .datos p {
+    font-size: 22px;
+    font-family: sans-serif;
+    text-align: center; }
+  /* line 307, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+  .datos form {
+    max-width: 400px;
+    /* Ancho máximo del formulario */
+    margin: 0 auto;
+    /* Centra el formulario horizontalmente */ }
+  /* line 311, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+  .datos label {
+    display: block;
+    /* Coloca cada etiqueta en una línea nueva */
+    margin-top: 10px;
+    /* Espacio superior entre las etiquetas */
+    font-weight: bold;
+    /* Hace que las etiquetas sean negritas */
+    font-family: sans-serif; }
+  /* line 317, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+  .datos input[type="text"],
+  .datos input[type="number"],
+  .datos input[type="email"],
+  .datos textarea {
+    width: 100%;
+    /* Los campos de entrada ocupan todo el ancho del formulario */
+    padding: 10px;
+    /* Espacio interior en los campos de entrada */
+    margin-bottom: 10px;
+    /* Espacio inferior entre los campos de entrada */
+    border: 1px solid #ccc;
+    /* Borde de los campos de entrada */
+    border-radius: 5px; }
+  /* line 327, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+  .datos input[type="submit"] {
+    background-color: orange;
+    /* Color de fondo del botón de enviar */
+    color: white;
+    /* Color de texto del botón de enviar */
+    padding: 10px 20px;
+    /* Espacio interior en el botón de enviar */
+    border: none;
+    /* Elimina el borde del botón de enviar */
+    border-radius: 5px;
+    /* Bordes redondeados en el botón de enviar */
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre el botón de enviar */ }
+  /* line 335, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+  .datos input[type="submit"]:hover {
+    background-color: gray;
+    /* Cambia el color de fondo al pasar sobre el botón */ }
 
 /* ESTILOS PARA MAIN-ECOMUNIDAD */
+/* line 340, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+.carousel-comunidad {
+  padding: 20px 0; }
 
-.carousel-comunidad {padding: 20px 0;}
+/* line 342, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+.comunidad {
+  padding: 20px 0;
+  background-color: #dbd8d8; }
+  /* line 345, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+  .comunidad img {
+    transition: transform 0.2s;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+    /* line 350, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+    .comunidad img:hover {
+      transform: scale(1.1); }
 
-.comunidad {padding: 20px 0;
-background-color: rgb(219, 216, 216);}
-.comunidad img {transition: transform 0.2s;
-  cursor: pointer;
-  margin-top: 20px;
-  margin-bottom: 20px;}
-.comunidad img:hover {transform: scale(1.1);}
+/* line 354, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+.video-comunidad {
+  background-color: white;
+  padding: 20px 0; }
+  /* line 357, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+  .video-comunidad iframe {
+    max-width: 100%; }
 
-.video-comunidad {background-color: white; 
-  padding: 20px 0;}
-.video-comunidad iframe {max-width: 100%;}
- 
 /* ESTILOS PARA MAIN-TIENDA */
+/* line 362, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+.suplementos {
+  background-color: #dbd8d8;
+  padding: 20px 0; }
+  /* line 365, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+  .suplementos video {
+    max-width: 100%;
+    width: 500px;
+    height: 400px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border: 2px solid orange;
+    /* Borde sólido de 2px de ancho y color azul */
+    border-radius: 10px;
+    /* Borde redondeado */
+    padding: 10px;
+    /* Espaciado interno para separar el contenido del borde */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Sombra alrededor del video */ }
 
-.suplementos { background-color: rgb(219, 216, 216);
-  padding: 20px 0;}
-
-.suplementos video {max-width:100%;
-  width: 500px;
-  height: 400px;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  border: 2px solid orange; /* Borde sólido de 2px de ancho y color azul */
-  border-radius: 10px; /* Borde redondeado */
-  padding: 10px; /* Espaciado interno para separar el contenido del borde */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra alrededor del video */
-}
-
+/* line 377, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
 .snacks {
   margin-top: 30px;
-  margin-bottom: 30px;}
-.snacks h2 { margin-bottom: 20px;}
+  margin-bottom: 30px; }
+  /* line 380, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+  .snacks h2 {
+    margin-bottom: 20px; }
 
 /* ESTILOS PARA MAIN-UBICACIÓN */
-.ubicacion { background-color: white;
-  padding: 20px 0; /* Espaciado interno superior e inferior */}
-.ubicacion p {font-size: 22px;}
-.ubicacion iframe {max-width:100%;
-  width: 500px;
-  height: 400px;}
+/* line 385, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+.ubicacion {
+  background-color: white;
+  padding: 20px 0;
+  /* Espaciado interno superior e inferior */ }
+  /* line 388, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+  .ubicacion p {
+    font-size: 22px; }
+  /* line 390, ../../../../../Desktop/Curso coder/ECO Entrenamiento/scss/style.scss */
+  .ubicacion iframe {
+    max-width: 100%;
+    width: 500px;
+    height: 400px; }
+
+/*# sourceMappingURL=style.css.map */

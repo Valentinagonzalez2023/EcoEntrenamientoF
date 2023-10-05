@@ -1,0 +1,394 @@
+/* ESTILOS GENERALES */
+
+* {margin: 0;
+  padding: 0;
+}
+
+h1 {color: gray;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 36px; /* Tamaño del título */
+  margin-bottom: 20px; /* Espaciado inferior del título */
+}
+
+h2 {color: orange;
+  text-align: center;
+  font-size: 26px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Truco para que las imágenes se adapten dentro de su contenedor */
+img {max-width: 100%;
+  height: auto;
+}
+
+/* Estilos para los carrusel de imágenes */
+#carousel {margin-top: 20px;
+  border: 3px solid orange;
+  border-radius: 10px;
+
+  .carousel-control-prev-icon, .carousel-control-next-icon {background-color: orange;}
+}
+  
+/* ESTILOS PARA FOOTER */
+.container-footer {max-width: 1200px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centrar horizontalmente */
+}
+
+footer {background-color: gray; 
+  color: white;
+  padding: 10px 0px; /* Espaciado interior superior e inferior */
+
+  p {display: flex;
+    align-items: center; /* Alinea verticalmente el contenido de los párrafos con los íconos */
+    font-size: 20px;
+  }
+
+  /* Estilos para los íconos */
+  i {margin-right: 5px; /* Espaciado a la derecha de los íconos */
+    font-size: 20px; /* Tamaño de fuente para los íconos */
+  }
+
+  /* Estilos para los enlaces */
+  a {color: white;
+    text-decoration: none;
+
+    &:hover {color: orange;}
+  }
+ 
+  .list-unstyled i {
+    margin-bottom: 15px;
+  }
+}
+
+/* ESTILOS PARA HEADER */
+
+.container-nav {
+  background-color: gray;
+}
+
+.navbar {align-items: center;
+
+  .navbar-brand img {max-width: 150px;
+    margin-left: 20px;
+  }
+}
+
+/* Estilos para los enlaces de la barra de navegación */
+.nav-item {margin-right: 10px;
+  
+  .nav-link {color: white;
+    border: 2px solid orange;
+    border-radius: 10px;
+    font-size: 20px;
+    
+    &:hover {color: black;}
+  }
+}
+
+/* ESTILOS PARA MAIN-INDEX */
+
+.movimiento {background-color: rgb(219, 216, 216);
+  padding: 20px 0;
+  overflow-x: hidden;
+
+  h1 {color: black;
+    font-size: 36px;
+    animation: moveText 6s linear infinite;
+    display: inline-block;
+    white-space: nowrap;
+  }
+}
+
+.elMundo {background-color: white;
+padding:  20px 0;
+overflow-x: hidden;
+
+  h1 {color: black;
+    font-size: 36px;
+    animation: moveText 6s linear infinite;
+    display: inline-block;
+    white-space: nowrap;
+  }
+  
+  img {max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  p {font-size: 22px;
+  }
+}
+
+.orange {background-color: rgb(243, 161, 9);
+  color: white;
+  padding: 10px;
+  overflow-x: hidden;
+
+  p {margin: 5px 0;
+    font-size: 26px;
+    animation: moveText 6s linear infinite;
+    display: inline-block;
+    white-space: nowrap;
+  }
+    
+  /* Estilos para pantallas más grandes */
+  @keyframes moveText {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    25% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    75% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+  }
+  
+  /* Estilos para pantallas más pequeñas (móviles) */
+  @media (max-width: 768px) {
+    .orange p {
+      font-size: 18px; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+      animation: moveTextMobile 4s linear infinite; /* Cambia la animación para móviles */
+    }
+    .movimiento h1 {
+      font-size: 16px;
+      animation: moveTextMobile 4s linear infinite;
+    }
+    .elMundo h1 {
+      font-size: 16px;
+      animation: moveTextMobile 4s linear infinite;
+    }
+  
+    @keyframes moveTextMobile {
+      0% {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      25% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+      75% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+      100% {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+    }
+  }
+
+}
+
+/* ESTILOS PARA MAIN-NOSOTROS */
+
+.hermanos { background-color: white;
+  padding: 30px 0; /* Espaciado interior superior e inferior */
+
+  p {font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .texto-orange {color: orange;
+    font-size: 30px;
+  }
+
+  .zoom img {border: 3px solid orange;
+    border-radius: 10px;
+    width: 400px;
+    height: 600px ;
+    margin-top: 20px;
+    transition: transform 0.2s;
+    cursor: pointer;
+  
+    &:hover {transform: scale(1.1);}
+  }
+}
+
+.profe-nuevo { background-color: rgb(219, 216, 216);
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  p {text-align: center;
+    font-size: 22px;
+    margin-top: 10px;
+  }
+
+  img {width: 500px;
+    height: 550px;
+    display: block; /* Asegura que los márgenes automáticos funcionen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 3px solid orange;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    cursor: pointer;
+  
+    &:hover {transform: scale(1.1);}
+  }
+}
+
+.profesores {background-image: url(../img/background.jpeg);
+  background-repeat: repeat;
+
+  p {background-color: rgb(252, 213, 141);
+    text-align: center;
+    font-size: 22px;
+    margin-top: 10px;
+  }
+
+  img {width: 400px;
+    height: 500px;
+    display: block; /* Asegura que los márgenes automáticos funcionen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    margin-bottom: 40px;
+    margin-top: 40px;
+    transition: transform 0.2s;
+    cursor: pointer;
+    border: 3px solid orange;
+    border-radius: 10px;
+  
+    &:hover { transform: scale(1.1);}
+  }
+}
+
+/* ESTILOS PARA MAIN-INFORMACION */
+
+.servicios {padding: 20px 0;
+  background-color: rgb(219, 216, 216);
+}
+
+.destacada {transition: transform 0.2s;
+  cursor: pointer;
+  margin-left: 10px;
+
+  &:hover {transform: scale(1.1);}
+}
+
+.destacada-especial {margin-left: 20px;}
+
+.horarios {padding: 20px 0;
+
+  img {
+    width: 450px;
+    height: 750px;
+    display: block; /* Asegura que los márgenes automáticos funcionen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  p {font-size: 22px;
+    font-family: sans-serif;
+    text-align: center;
+  } 
+}
+
+.datos {background-color: rgb(219, 216, 216);
+  padding: 20px; /* Espacio interior */
+  border-radius: 5px;
+
+  p {font-size: 22px;
+    font-family: sans-serif;
+    text-align: center;
+  }
+
+  form {max-width: 400px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centra el formulario horizontalmente */
+  }
+
+  label {display: block; /* Coloca cada etiqueta en una línea nueva */
+    margin-top: 10px; /* Espacio superior entre las etiquetas */
+    font-weight: bold; /* Hace que las etiquetas sean negritas */
+    font-family: sans-serif;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  textarea {width: 100%; /* Los campos de entrada ocupan todo el ancho del formulario */
+    padding: 10px; /* Espacio interior en los campos de entrada */
+    margin-bottom: 10px; /* Espacio inferior entre los campos de entrada */
+    border: 1px solid #ccc; /* Borde de los campos de entrada */
+    border-radius: 5px;
+  }
+
+  input[type="submit"] {background-color: orange; /* Color de fondo del botón de enviar */
+    color: white; /* Color de texto del botón de enviar */
+    padding: 10px 20px; /* Espacio interior en el botón de enviar */
+    border: none; /* Elimina el borde del botón de enviar */
+    border-radius: 5px; /* Bordes redondeados en el botón de enviar */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón de enviar */
+  }
+
+  input[type="submit"]:hover {background-color: gray; /* Cambia el color de fondo al pasar sobre el botón */}
+}
+
+/* ESTILOS PARA MAIN-ECOMUNIDAD */
+
+.carousel-comunidad {padding: 20px 0;}
+
+.comunidad {padding: 20px 0;
+background-color: rgb(219, 216, 216);
+
+  img {transition: transform 0.2s;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  
+    &:hover {transform: scale(1.1);}
+  }
+}
+
+.video-comunidad {background-color: white; 
+  padding: 20px 0;
+
+  iframe {max-width: 100%;}
+}
+
+/* ESTILOS PARA MAIN-TIENDA */
+
+.suplementos {background-color: rgb(219, 216, 216);
+  padding: 20px 0;
+
+  video {max-width:100%;
+    width: 500px;
+    height: 400px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border: 2px solid orange; /* Borde sólido de 2px de ancho y color azul */
+    border-radius: 10px; /* Borde redondeado */
+    padding: 10px; /* Espaciado interno para separar el contenido del borde */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra alrededor del video */
+  }
+}
+
+.snacks {margin-top: 30px;
+  margin-bottom: 30px;
+
+  h2 { margin-bottom: 20px;}
+}
+
+
+/* ESTILOS PARA MAIN-UBICACIÓN */
+.ubicacion { background-color: white;
+  padding: 20px 0; /* Espaciado interno superior e inferior */
+
+  p {font-size: 22px;}
+
+  iframe {max-width:100%;
+    width: 500px;
+    height: 400px;
+  }
+}
