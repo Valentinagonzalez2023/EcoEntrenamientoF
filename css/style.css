@@ -40,7 +40,8 @@ footer p {display: flex;
   font-size: 20px; /* Tamaño de fuente para el texto */}
 
 /* Estilos para los enlaces */
-a {color: white;}
+a {color: white;
+text-decoration: none;}
 a:hover {color: orange;}
 
 .list-unstyled i, p {
@@ -170,7 +171,7 @@ overflow-x: hidden;}
   margin-bottom: 20px;
 }
 
-.hermanos strong {color: orange;
+.hermanos .texto-orange {color: orange;
   font-size: 30px;}
 
 .hermanos .zoom img { border: 3px solid orange;
@@ -236,7 +237,7 @@ overflow-x: hidden;}
 
 .horarios {padding: 20px 0;}
 .horarios img {
-  width: 600px;
+  width: 450px;
   height: 750px;
   display: block; /* Asegura que los márgenes automáticos funcionen */
   margin: 0 auto; /* Centra la imagen horizontalmente */
