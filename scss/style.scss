@@ -1,5 +1,11 @@
 /* ESTILOS GENERALES */
 
+/* VARIABLES */
+$color-primario: rgb(219, 216, 216);
+$color-secundario: white;
+$fuente-parrafos: Arial;
+$size-parrafos: 22px;
+
 * {margin: 0;
   padding: 0;
 }
@@ -13,7 +19,7 @@ h1 {color: gray;
 
 h2 {color: orange;
   text-align: center;
-  font-size: 26px;
+  font-size: 30px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -42,6 +48,7 @@ footer {background-color: gray;
   p {display: flex;
     align-items: center; /* Alinea verticalmente el contenido de los párrafos con los íconos */
     font-size: 20px;
+    font-family: sans-serif;
   }
 
   /* Estilos para los íconos */
@@ -81,6 +88,7 @@ footer {background-color: gray;
     border: 2px solid orange;
     border-radius: 10px;
     font-size: 20px;
+    font-family: sans-serif;
     
     &:hover {color: black;}
   }
@@ -88,7 +96,7 @@ footer {background-color: gray;
 
 /* ESTILOS PARA MAIN-INDEX */
 
-.movimiento {background-color: rgb(219, 216, 216);
+.movimiento {background-color: $color-primario;
   padding: 20px 0;
   overflow-x: hidden;
 
@@ -100,7 +108,7 @@ footer {background-color: gray;
   }
 }
 
-.elMundo {background-color: white;
+.elMundo {background-color: $color-secundario;
 padding:  20px 0;
 overflow-x: hidden;
 
@@ -117,17 +125,19 @@ overflow-x: hidden;
     margin-bottom: 20px;
   }
   
-  p {font-size: 22px;
+  p {font-size: $size-parrafos;
+    font-family: $fuente-parrafos;
   }
 }
 
-.orange {background-color: rgb(243, 161, 9);
+.orange {background-color: orange;
   color: white;
   padding: 10px;
   overflow-x: hidden;
 
   p {margin: 5px 0;
     font-size: 26px;
+    font-family: $fuente-parrafos;
     animation: moveText 6s linear infinite;
     display: inline-block;
     white-space: nowrap;
@@ -192,10 +202,11 @@ overflow-x: hidden;
 
 /* ESTILOS PARA MAIN-NOSOTROS */
 
-.hermanos { background-color: white;
+.hermanos { background-color: $color-secundario;
   padding: 30px 0; /* Espaciado interior superior e inferior */
 
-  p {font-size: 22px;
+  p {font-size: $size-parrafos;
+    font-family: $fuente-parrafos;
     margin-bottom: 20px;
   }
 
@@ -215,12 +226,13 @@ overflow-x: hidden;
   }
 }
 
-.profe-nuevo { background-color: rgb(219, 216, 216);
+.profe-nuevo { background-color: $color-primario;
   margin-top: 30px;
   margin-bottom: 30px;
 
   p {text-align: center;
-    font-size: 22px;
+    font-size: $size-parrafos;
+    font-family: $fuente-parrafos;
     margin-top: 10px;
   }
 
@@ -244,7 +256,8 @@ overflow-x: hidden;
 
   p {background-color: rgb(252, 213, 141);
     text-align: center;
-    font-size: 22px;
+    font-size: $size-parrafos;
+    font-family: $fuente-parrafos;
     margin-top: 10px;
   }
 
@@ -266,7 +279,7 @@ overflow-x: hidden;
 /* ESTILOS PARA MAIN-INFORMACION */
 
 .servicios {padding: 20px 0;
-  background-color: rgb(219, 216, 216);
+  background-color: $color-primario;
 }
 
 .destacada {transition: transform 0.2s;
@@ -289,18 +302,18 @@ overflow-x: hidden;
     margin-bottom: 20px;
   }
 
-  p {font-size: 22px;
-    font-family: sans-serif;
+  p {font-size: $size-parrafos;
+    font-family: $fuente-parrafos;
     text-align: center;
   } 
 }
 
-.datos {background-color: rgb(219, 216, 216);
+.datos {background-color: $color-primario;
   padding: 20px; /* Espacio interior */
   border-radius: 5px;
 
-  p {font-size: 22px;
-    font-family: sans-serif;
+  p {font-size: $size-parrafos;
+    font-family: $fuente-parrafos;
     text-align: center;
   }
 
@@ -340,7 +353,7 @@ overflow-x: hidden;
 .carousel-comunidad {padding: 20px 0;}
 
 .comunidad {padding: 20px 0;
-background-color: rgb(219, 216, 216);
+background-color: $color-primario;
 
   img {transition: transform 0.2s;
     cursor: pointer;
@@ -351,7 +364,7 @@ background-color: rgb(219, 216, 216);
   }
 }
 
-.video-comunidad {background-color: white; 
+.video-comunidad {background-color: $color-secundario; 
   padding: 20px 0;
 
   iframe {max-width: 100%;}
@@ -359,7 +372,7 @@ background-color: rgb(219, 216, 216);
 
 /* ESTILOS PARA MAIN-TIENDA */
 
-.suplementos {background-color: rgb(219, 216, 216);
+.suplementos {background-color: $color-primario;
   padding: 20px 0;
 
   video {max-width:100%;
@@ -380,12 +393,19 @@ background-color: rgb(219, 216, 216);
   h2 { margin-bottom: 20px;}
 }
 
+.card-body p {
+  font-family: $fuente-parrafos;
+  font-size: $size-parrafos;
+}
+
 
 /* ESTILOS PARA MAIN-UBICACIÓN */
-.ubicacion { background-color: white;
+.ubicacion { background-color: $color-secundario;
   padding: 20px 0; /* Espaciado interno superior e inferior */
 
-  p {font-size: 22px;}
+  p {font-size: $size-parrafos;
+    font-family: $fuente-parrafos;
+  }
 
   iframe {max-width:100%;
     width: 500px;
