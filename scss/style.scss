@@ -104,7 +104,8 @@ footer {background-color: gray;
     font-size: 36px;
     animation: moveText 6s linear infinite;
     display: inline-block;
-    white-space: nowrap;
+    white-space: normal;
+    line-height: 1.5; /* Ajusta el espaciado entre líneas para separar las oraciones */
   }
 }
 
@@ -116,7 +117,8 @@ overflow-x: hidden;
     font-size: 36px;
     animation: moveText 6s linear infinite;
     display: inline-block;
-    white-space: nowrap;
+    white-space: normal;
+    line-height: 1.5; /* Ajusta el espaciado entre líneas para separar las oraciones */
   }
   
   img {max-width: 100%;
@@ -140,7 +142,8 @@ overflow-x: hidden;
     font-family: $fuente-parrafos;
     animation: moveText 6s linear infinite;
     display: inline-block;
-    white-space: nowrap;
+    white-space: normal;
+    line-height: 1.5; /* Ajusta el espaciado entre líneas para separar las oraciones */
   }
     
   /* Estilos para pantallas más grandes */
@@ -166,16 +169,19 @@ overflow-x: hidden;
   /* Estilos para pantallas más pequeñas (móviles) */
   @media (max-width: 768px) {
     .orange p {
-      font-size: 18px; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
-      animation: moveTextMobile 4s linear infinite; /* Cambia la animación para móviles */
+      font-size: 16px; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+      animation: moveTextMobile 6s linear infinite; /* Cambia la animación para móviles */
+      line-height: 1.1; /* Ajusta el espaciado entre líneas para separar las oraciones en móviles */
     }
     .movimiento h1 {
       font-size: 16px;
-      animation: moveTextMobile 4s linear infinite;
+      animation: moveTextMobile 6s linear infinite;
+      line-height: 1.1; /* Ajusta el espaciado entre líneas para separar las oraciones en móviles */
     }
     .elMundo h1 {
       font-size: 16px;
-      animation: moveTextMobile 4s linear infinite;
+      animation: moveTextMobile 6s linear infinite;
+      line-height: 1.1; /* Ajusta el espaciado entre líneas para separar las oraciones en móviles */
     }
   
     @keyframes moveTextMobile {
@@ -197,7 +203,6 @@ overflow-x: hidden;
       }
     }
   }
-
 }
 
 /* ESTILOS PARA MAIN-NOSOTROS */
