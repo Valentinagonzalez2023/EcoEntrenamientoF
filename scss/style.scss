@@ -39,15 +39,14 @@ img {max-width: 100%;
 /* ESTILOS PARA FOOTER */
 .container-footer {max-width: 1200px; /* Ancho máximo del contenedor */
   margin: 0 auto; /* Centrar horizontalmente */
+  text-align: center;
 }
 
 footer {background-color: gray; 
   color: white;
   padding: 10px 0px; /* Espaciado interior superior e inferior */
 
-  p {display: flex;
-    align-items: center; /* Alinea verticalmente el contenido de los párrafos con los íconos */
-    font-size: 20px;
+  p {font-size: 20px;
     font-family: sans-serif;
   }
 
@@ -92,6 +91,11 @@ footer {background-color: gray;
     
     &:hover {color: black;}
   }
+}
+
+/* Opcional: Reduzca el espacio entre los elementos del menú */
+.navbar-nav .nav-item {
+  margin-bottom: 10px; /* Ajusta este valor según tus necesidades */
 }
 
 /* ESTILOS PARA MAIN-INDEX */
@@ -281,6 +285,7 @@ overflow-x: hidden;
   }
 }
 
+
 /* ESTILOS PARA MAIN-INFORMACION */
 
 .servicios {padding: 20px 0;
@@ -310,47 +315,61 @@ overflow-x: hidden;
   p {font-size: $size-parrafos;
     font-family: $fuente-parrafos;
     text-align: center;
-  } 
+    margin-top: 20px;
+  }
+
+  .datos {padding: 20px; /* Espacio interior */
+    border: 2px solid orange;
+    border-radius: 10px;
+  
+    p {font-size: $size-parrafos;
+      font-family: $fuente-parrafos;
+      text-align: center;
+    }
+  
+    form {max-width: 400px; /* Ancho máximo del formulario */
+      margin: 0 auto; /* Centra el formulario horizontalmente */
+    }
+  
+    label {display: block; /* Coloca cada etiqueta en una línea nueva */
+      margin-top: 10px; /* Espacio superior entre las etiquetas */
+      font-weight: bold; /* Hace que las etiquetas sean negritas */
+      font-family: sans-serif;
+    }
+  
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    textarea {width: 100%; /* Los campos de entrada ocupan todo el ancho del formulario */
+      padding: 10px; /* Espacio interior en los campos de entrada */
+      margin-bottom: 10px; /* Espacio inferior entre los campos de entrada */
+      border: 1px solid #ccc; /* Borde de los campos de entrada */
+      border-radius: 5px;
+    }
+  
+    input[type="submit"] {background-color: orange; /* Color de fondo del botón de enviar */
+      color: white; /* Color de texto del botón de enviar */
+      padding: 10px 20px; /* Espacio interior en el botón de enviar */
+      border: none; /* Elimina el borde del botón de enviar */
+      border-radius: 5px; /* Bordes redondeados en el botón de enviar */
+      cursor: pointer; /* Cambia el cursor al pasar sobre el botón de enviar */
+    }
+  
+    input[type="submit"]:hover {background-color: gray; /* Cambia el color de fondo al pasar sobre el botón */}
+  }
 }
 
-.datos {background-color: $color-primario;
-  padding: 20px; /* Espacio interior */
-  border-radius: 5px;
+.ubicacion {background-color: $color-primario;
+  padding: 20px 0; /* Espaciado interno superior e inferior */
 
   p {font-size: $size-parrafos;
     font-family: $fuente-parrafos;
-    text-align: center;
   }
 
-  form {max-width: 400px; /* Ancho máximo del formulario */
-    margin: 0 auto; /* Centra el formulario horizontalmente */
+  iframe {max-width:100%;
+    width: 500px;
+    height: 400px;
   }
-
-  label {display: block; /* Coloca cada etiqueta en una línea nueva */
-    margin-top: 10px; /* Espacio superior entre las etiquetas */
-    font-weight: bold; /* Hace que las etiquetas sean negritas */
-    font-family: sans-serif;
-  }
-
-  input[type="text"],
-  input[type="number"],
-  input[type="email"],
-  textarea {width: 100%; /* Los campos de entrada ocupan todo el ancho del formulario */
-    padding: 10px; /* Espacio interior en los campos de entrada */
-    margin-bottom: 10px; /* Espacio inferior entre los campos de entrada */
-    border: 1px solid #ccc; /* Borde de los campos de entrada */
-    border-radius: 5px;
-  }
-
-  input[type="submit"] {background-color: orange; /* Color de fondo del botón de enviar */
-    color: white; /* Color de texto del botón de enviar */
-    padding: 10px 20px; /* Espacio interior en el botón de enviar */
-    border: none; /* Elimina el borde del botón de enviar */
-    border-radius: 5px; /* Bordes redondeados en el botón de enviar */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón de enviar */
-  }
-
-  input[type="submit"]:hover {background-color: gray; /* Cambia el color de fondo al pasar sobre el botón */}
 }
 
 /* ESTILOS PARA MAIN-ECOMUNIDAD */
@@ -403,17 +422,3 @@ background-color: $color-primario;
   font-size: $size-parrafos;
 }
 
-
-/* ESTILOS PARA MAIN-UBICACIÓN */
-.ubicacion { background-color: $color-secundario;
-  padding: 20px 0; /* Espaciado interno superior e inferior */
-
-  p {font-size: $size-parrafos;
-    font-family: $fuente-parrafos;
-  }
-
-  iframe {max-width:100%;
-    width: 500px;
-    height: 400px;
-  }
-}
