@@ -15,6 +15,18 @@ h1 {color: gray;
   font-family: sans-serif;
   font-size: 36px; /* Tamaño del título */
   margin-bottom: 20px; /* Espaciado inferior del título */
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInFromBottom 1s ease-out 1 forwards;
+}
+
+@keyframes fadeInFromBottom {
+  from {opacity: 0;
+    transform: translateY(50px);
+  }
+  to {opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 h2 {color: orange;
@@ -92,8 +104,6 @@ footer {background-color: gray;
     &:hover {color: black;}
   }
 }
-
-/* Opcional: Reduzca el espacio entre los elementos del menú */
 .navbar-nav .nav-item {
   margin-bottom: 10px; /* Ajusta este valor según tus necesidades */
 }
@@ -209,6 +219,23 @@ overflow-x: hidden;
   }
 }
 
+.animacion {
+  opacity: 0; /* Opacidad inicial en 0 (invisible) */
+  transform: scale(0.2); /* Escala inicial en 0.2 (tamaño inicial pequeño) */
+  animation: entradaImagen 2s ease-out 1 forwards; /* Aplicar la animación */
+}
+
+@keyframes entradaImagen {
+  0% {
+    opacity: 0; /* Opacidad inicial en 0 (invisible) */
+    transform: scale(0.2); /* Escala inicial en 0.2 (tamaño inicial pequeño) */
+  }
+  100% {
+    opacity: 1; /* Opacidad final en 1 (completamente visible) */
+    transform: scale(1); /* Tamaño final en 1 (tamaño original) */
+  }
+}
+
 /* ESTILOS PARA MAIN-NOSOTROS */
 
 .hermanos { background-color: $color-secundario;
@@ -223,21 +250,19 @@ overflow-x: hidden;
     font-size: 30px;
   }
 
-  .zoom img {border: 3px solid orange;
+  .animacion img {border: 3px solid orange;
     border-radius: 10px;
-    width: 400px;
-    height: 600px ;
     margin-top: 20px;
     transition: transform 0.2s;
     cursor: pointer;
   
-    &:hover {transform: scale(1.1);}
+    &:hover {transform: scale(1.04);}
   }
 }
 
-.profe-nuevo { background-color: $color-primario;
-  margin-top: 30px;
-  margin-bottom: 30px;
+.profe-nuevo {background-color: $color-primario;
+  margin-top: 20px;
+  margin-bottom: 20px;
 
   p {text-align: center;
     font-size: $size-parrafos;
@@ -256,7 +281,7 @@ overflow-x: hidden;
     transition: transform 0.2s;
     cursor: pointer;
   
-    &:hover {transform: scale(1.1);}
+    &:hover {transform: scale(1.04);}
   }
 }
 
@@ -274,17 +299,16 @@ overflow-x: hidden;
     height: 500px;
     display: block; /* Asegura que los márgenes automáticos funcionen */
     margin: 0 auto; /* Centra la imagen horizontalmente */
-    margin-bottom: 40px;
-    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     transition: transform 0.2s;
     cursor: pointer;
     border: 3px solid orange;
     border-radius: 10px;
   
-    &:hover { transform: scale(1.1);}
+    &:hover { transform: scale(1.04);}
   }
 }
-
 
 /* ESTILOS PARA MAIN-INFORMACION */
 
@@ -294,12 +318,11 @@ overflow-x: hidden;
 
 .destacada {transition: transform 0.2s;
   cursor: pointer;
-  margin-left: 10px;
-
-  &:hover {transform: scale(1.1);}
+  
+  &:hover {transform: scale(1.04);}
 }
 
-.destacada-especial {margin-left: 20px;}
+.destacada-especial {margin-left: 6px;}
 
 .horarios {padding: 20px 0;
 
@@ -381,10 +404,10 @@ background-color: $color-primario;
 
   img {transition: transform 0.2s;
     cursor: pointer;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   
-    &:hover {transform: scale(1.1);}
+    &:hover {transform: scale(0.96);}
   }
 }
 
@@ -417,8 +440,11 @@ background-color: $color-primario;
   h2 { margin-bottom: 20px;}
 }
 
-.card-body p {
+.card {
   font-family: $fuente-parrafos;
   font-size: $size-parrafos;
+  border: 2px solid gray;
+  border-radius: 6px;
+  box-shadow: 2px 2px 5px gray;
 }
 
